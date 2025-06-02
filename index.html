@@ -12,65 +12,78 @@
   <div class="container text-center py-5">
     <h1 class="mb-5">Control de vehículo IoT</h1>
 
+    <!-- Fila de adelante -->
     <div class="row mb-3">
       <div class="col-4">
-        <button class="btn btn-warning w-75 m-1" onclick="sendCommand('Vuelta izquierda adelante')">Vuelta izquierda adelante</button>
+        <button class="btn btn-warning w-75 m-1" onclick="sendCommand('V ADE IZQ')">Vuelta izquierda adelante</button>
       </div>
       <div class="col-4">
-        <button class="btn btn-primary w-75 m-1" onclick="sendCommand('Avanzar')">Avanzar</button>
+        <button class="btn btn-primary w-75 m-1" onclick="sendCommand('ADELANTE')">Avanzar</button>
       </div>
       <div class="col-4">
-        <button class="btn btn-warning w-75 m-1" onclick="sendCommand('Vuelta derecha adelante')">Vuelta derecha adelante</button>
+        <button class="btn btn-warning w-75 m-1" onclick="sendCommand('V ADE DER')">Vuelta derecha adelante</button>
       </div>
     </div>
 
+    <!-- Fila de giros 360 y detener -->
     <div class="row mb-3">
       <div class="col-4">
-        <button class="btn btn-primary w-75 m-1" onclick="sendCommand('Giro 360 grados izquierda')">Giro 360 grados izquierda</button>
+        <button class="btn btn-secondary w-75 m-1" onclick="sendCommand('G 360 IZQ')">Giro 360° izquierda</button>
       </div>
       <div class="col-4">
-        <button class="btn btn-primary w-75 m-1" onclick="sendCommand('Detener')">Detener</button>
+        <button class="btn btn-danger w-75 m-1" onclick="sendCommand('DETENER')">Detener</button>
       </div>
       <div class="col-4">
-        <button class="btn btn-primary w-75 m-1" onclick="sendCommand('Giro 360 grados derecha')">Giro 360 grados derecha</button>
+        <button class="btn btn-secondary w-75 m-1" onclick="sendCommand('G 360 DER')">Giro 360° derecha</button>
       </div>
     </div>
 
+    <!-- Fila de giros 90 y retroceso -->
     <div class="row mb-3">
       <div class="col-4">
-        <button class="btn btn-warning w-75 m-1" onclick="sendCommand('Giro 90 grados izquierda')">Giro 90 grados izquierda</button>
+        <button class="btn btn-secondary w-75 m-1" onclick="sendCommand('G 90 IZQ')">Giro 90° izquierda</button>
       </div>
       <div class="col-4">
-        <button class="btn btn-primary w-75 m-1" onclick="sendCommand('Retroceder')">Retroceder</button>
+        <button class="btn btn-primary w-75 m-1" onclick="sendCommand('ATRAS')">Retroceder</button>
       </div>
       <div class="col-4">
-        <button class="btn btn-warning w-75 m-1" onclick="sendCommand('Giro 90 grados derecha')">Giro 90 grados derecha</button>
+        <button class="btn btn-secondary w-75 m-1" onclick="sendCommand('G 90 DER')">Giro 90° derecha</button>
       </div>
     </div>
 
+    <!-- Fila de vueltas atrás -->
+    <div class="row mb-3">
+      <div class="col-4">
+        <button class="btn btn-warning w-75 m-1" onclick="sendCommand('V ATR IZQ')">Vuelta izquierda atrás</button>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-info w-75 m-1" onclick="sendCommand('REPLICAR MOV')">Repetir últimos movimientos</button>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-warning w-75 m-1" onclick="sendCommand('V ATR DER')">Vuelta derecha atrás</button>
+      </div>
+    </div>
+
+    <!-- Fila de velocidad -->
     <div class="row mb-5">
-      <div class="col-4">
-        <button class="btn btn-warning w-75 m-1" onclick="sendCommand('Vuelta izquierda atras')">Vuelta izquierda atras</button>
+      <div class="col-6">
+        <button class="btn btn-success w-75 m-1" onclick="sendCommand('SUBIR VEL')">Subir velocidad</button>
       </div>
-      <div class="col-4">
-        <!-- vacío en el centro -->
-      </div>
-      <div class="col-4">
-        <button class="btn btn-warning w-75 m-1" onclick="sendCommand('Vuelta derecha atras')">Vuelta derecha atras</button>
+      <div class="col-6">
+        <button class="btn btn-danger w-75 m-1" onclick="sendCommand('BAJAR VEL')">Bajar velocidad</button>
       </div>
     </div>
 
+    <!-- Movimiento actual -->
     <div id="movimiento" class="mt-5">
       <h3>Movimiento</h3>
       <h2 id="currentAction" class="text-primary">Esperando orden...</h2>
     </div>
-
   </div>
 
   <footer class="text-center text-muted py-3">
-   
-</footer>
-
+    &copy; 2025 Proyecto IoT
+  </footer>
 
   <script src="js/app.js"></script>
 </body>

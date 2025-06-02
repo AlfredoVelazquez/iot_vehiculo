@@ -1,4 +1,4 @@
-const apiUrl = "http://3.236.128.165/api/devices";
+const apiUrl = "http://3.236.168.43/api/devices";
 
 // Variable global para guardar la IP pública
 let ipPublica = "";
